@@ -5,7 +5,7 @@ on:
       - main
 
 jobs:
-  read and output the content:
+  read-and-output-the-content:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
