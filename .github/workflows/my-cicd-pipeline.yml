@@ -1,0 +1,14 @@
+name: Git Actions workflow ci/cd pipeline
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  read and output the content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Read the content
+        run: cat hello.txt
